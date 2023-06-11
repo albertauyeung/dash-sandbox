@@ -48,4 +48,4 @@ def input_triggers_spinner(value):
 
 
 if __name__ == "__main__":
-    app.run_server(debug=True)
+    app.run_server(app, "0.0.0.0", 8080, debug=True)
