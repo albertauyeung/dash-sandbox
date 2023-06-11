@@ -5,6 +5,7 @@ import time
 from dash.dependencies import Input, Output
 
 app = Dash(__name__)
+server = app.server
 
 options = [
     {'label': 'Option 1', 'value': 'opt1'},
@@ -48,4 +49,4 @@ def input_triggers_spinner(value):
 
 
 if __name__ == "__main__":
-    app.run_server(app, "0.0.0.0", 8080, debug=True)
+    app.run_server(app)
